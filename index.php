@@ -73,6 +73,10 @@ require 'funciones.php';
               <?php }?>
             </div>
 
+            <div class="panel-center">
+              <h5 class="text-center"><?php print $item['descripcion']?></h5>
+            </div>
+
             <div class="panel-footer">
               <a href="carrito.php?id=<?php print $item['id'];?>" class="btn btn-success btn-block">
                 <span class="glyphicon glyphicon-shopping-cart"></span>Comprar
