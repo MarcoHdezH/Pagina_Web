@@ -82,6 +82,15 @@ if(!isset($_SESSION['usuario_info']) OR empty($_SESSION['usuario_info']))
               </div>
 
               <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Link</label>
+                        <textarea type="text" class="form-control" name="link" id="" cols="3" required></textarea>
+                    </div>
+                </div>
+              </div>
+
+              <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
                         <label>Categorias</label>

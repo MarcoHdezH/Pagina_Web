@@ -16,7 +16,7 @@
         }
 
         public function registrar($_params){
-            $sql = "INSERT INTO `peliculas`(`titulo`, `descripcion`, `foto`, `precio`, `categoria_id`, `fecha`) VALUES (:titulo,:descripcion,:foto,:precio,:categoria_id,:fecha)";
+            $sql = "INSERT INTO `peliculas`(`titulo`, `descripcion`, `foto`, `precio`, `categoria_id`, `fecha`, `link`) VALUES (:titulo,:descripcion,:foto,:precio,:categoria_id,:fecha,:link)";
 
             $resultado = $this->cn->prepare($sql);
 
@@ -27,6 +27,7 @@
                 ":precio" => $_params['precio'],
                 ":categoria_id" => $_params['categoria_id'],
                 ":fecha" => $_params['fecha'],
+                ":link" => $_params['link'],
             );
 
             if($resultado->execute($_array))
@@ -39,7 +40,7 @@
 
         public function actualizar($_params){
             
-            $sql = "UPDATE `peliculas` SET `titulo`=:titulo,`descripcion`=:descripcion,`foto`=:foto,`precio`=:precio,`categoria_id`=:categoria_id,`fecha`=:fecha WHERE `id`=:id";
+            $sql = "UPDATE `peliculas` SET `titulo`=:titulo,`descripcion`=:descripcion,`foto`=:foto,`precio`=:precio,`categoria_id`=:categoria_id,`fecha`=:fecha,`link`=:link WHERE `id`=:id";
 
             $resultado = $this->cn->prepare($sql);
 
@@ -50,6 +51,7 @@
                 ":precio" => $_params['precio'],
                 ":categoria_id" => $_params['categoria_id'],
                 ":fecha" => $_params['fecha'],
+                ":link" => $_params['link'],
                 ":id" => $_params['id'],
             );
 

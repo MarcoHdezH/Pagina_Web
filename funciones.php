@@ -6,6 +6,7 @@ function agregarPelicula($resultado, $id, $cantidad = 1){
         'titulo' => $resultado['titulo'],
         'foto' => $resultado['foto'],
         'precio' => $resultado['precio'],
+        'link' => $resultado['link'],
         'cantidad' => $cantidad
    );
 }
