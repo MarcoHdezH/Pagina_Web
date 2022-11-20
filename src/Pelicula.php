@@ -79,7 +79,7 @@
 
         public function mostrar(){
 
-            $sql = "SELECT peliculas.id, titulo, descripcion, foto, nombre, precio, fecha, estado FROM peliculas
+            $sql = "SELECT peliculas.id, titulo, descripcion, foto, nombre, precio, fecha,link, estado FROM peliculas
             
             INNER JOIN categorias
             ON peliculas.categoria_id = categorias.id ORDER BY peliculas.id ASC";

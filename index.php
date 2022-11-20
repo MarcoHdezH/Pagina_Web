@@ -77,6 +77,13 @@ require 'funciones.php';
               <h5 class="text-center"><?php print $item['descripcion']?></h5>
             </div>
 
+            <div class="panel-center">
+              <iframe width="250" height="250" src="<?php print $item['link'] ?>"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </div>
+
             <div class="panel-footer">
               <a href="carrito.php?id=<?php print $item['id'];?>" class="btn btn-success btn-block">
                 <span class="glyphicon glyphicon-shopping-cart"></span>Comprar
